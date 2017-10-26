@@ -91,7 +91,6 @@ git pull --rebase
 rake update
 ```
 
-
 ## What's included, and how to customize?
 
 Read on to learn what YADR provides!
