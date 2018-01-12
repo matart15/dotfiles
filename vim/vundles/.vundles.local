@@ -1,0 +1,4 @@
+Plugin 'pangloss/vim-javascript'
+" Plugin 'mxw/vim-jsx'
+Plugin 'ternjs/tern_for_vim'
+Plugin 'Valloric/YouCompleteMe'
