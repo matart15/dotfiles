@@ -44,10 +44,9 @@ root: ~/
 
 windows:
   - editor:
-      layout: d000,272x62,0,0{135x62,0,0[135x15,0,0,58,135x15,0,16{67x15,0,16,66,67x15,68,16,67},135x14,0,32,60,135x15,0,47,61],136x62,136,0[136x15,136,0,62,136x15,136,16,63,136x14,136,32,64,136x15,136,47,65]}
+      layout: f7ae,128x38,0,0{63x38,0,0[63x8,0,0,8,63x9,0,9,12,63x9,0,19,11,63x9,0,29,13],64x38,64,0[64x8,64,0,10,64x9,64,9,15,64x9,64,19,14,64x9,64,29,16]}
       panes:
         - cd ~/workplace/react_native
-        - cd ~/workplace/react_native/heroz
         - cd ~/workplace/react_native/heroz
         - cd ~/workplace
         - cd ~/workplace/Unity/00_senken
