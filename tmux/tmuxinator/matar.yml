@@ -44,13 +44,9 @@ root: ~/
 
 windows:
   - editor:
-      layout: f7ae,128x38,0,0{63x38,0,0[63x8,0,0,8,63x9,0,9,12,63x9,0,19,11,63x9,0,29,13],64x38,64,0[64x8,64,0,10,64x9,64,9,15,64x9,64,19,14,64x9,64,29,16]}
+      layout: a21a,272x59,0,0[272x13,0,0,4,272x14,0,14,29,272x14,0,29,6,272x15,0,44,7]
       panes:
         - cd ~/workplace/react_native
         - cd ~/workplace/react_native/heroz
         - cd ~/workplace
         - cd ~/workplace/Unity/00_senken
-        - cd ~/workplace/react_native/babydoor_react_native
-        - cd ~/workplace
-        - cd ~/workplace
-        - cd ~/workplace
