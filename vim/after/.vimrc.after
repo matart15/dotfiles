@@ -17,6 +17,7 @@ let g:airline#extensions#ale#enabled = 1
 
 let g:ale_linters = {
 \   'javascript': ['eslint'],
+\   'graphql': ['eslint'],
 \   'php': [],
 \}
 " Put this in vimrc or a plugin file of your own.
@@ -64,3 +65,9 @@ augroup numbertoggle
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
+
+" Access colors present in 256 colorspace
+let base16colorspace=256
+
+" let g:yadr_disable_solarized_enhancements = 1
+" colorscheme base16-onedark
