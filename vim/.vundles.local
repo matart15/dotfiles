@@ -1,5 +1,6 @@
 Bundle "https://github.com/wikitopian/hardmode"
 Bundle "https://github.com/w0rp/ale"
+Bundle "https://github.com/szw/vim-maximizer"
 Plugin 'pangloss/vim-javascript'
 " Plugin 'mxw/vim-jsx'
 Plugin 'ternjs/tern_for_vim'
