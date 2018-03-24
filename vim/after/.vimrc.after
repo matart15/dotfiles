@@ -17,6 +17,7 @@ let g:airline#extensions#ale#enabled = 1
 
 let g:ale_linters = {
 \   'javascript': ['eslint'],
+\   'typescript': ['eslint'],
 \   'graphql': ['eslint'],
 \   'php': [],
 \}
@@ -24,11 +25,12 @@ let g:ale_linters = {
 " After this is configured, :ALEFix will try and fix your JS code with ESLint.
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
+\   'typescript': ['eslint'],
 \}
 
 " Set this setting in vimrc if you want to fix files automatically on save.
 " This is off by default.
-let g:ale_fix_on_save = 1
+" let g:ale_fix_on_save = 1
 let g:ale_javascript_eslint_executable = 'yarn eslint'
 
 let g:javascript_plugin_flow = 1
@@ -54,9 +56,10 @@ function! MyFoldText() " {{{
     return line . '…' . repeat(" ",fillcharcount) . foldedlinecount . '…' . ' '
 endfunction " }}}
 set foldtext=MyFoldText()
-set foldnestmax=2
-" set foldlevelstart=2
-set foldlevel=2
+set foldnestmax=5
+set foldlevelstart=2
+set foldlevel=5
+" set fillchars=fold:␣
 
 set number relativenumber
 
@@ -69,5 +72,23 @@ augroup END
 " Access colors present in 256 colorspace
 let base16colorspace=256
 
-" let g:yadr_disable_solarized_enhancements = 1
+let g:yadr_disable_solarized_enhancements = 1
 " colorscheme base16-onedark
+
+nnoremap <silent> gd :TernDef<CR>
+
+" local vimrc
+augroup vimrc-local
+  autocmd!
+  autocmd BufNewFile,BufReadPost * call s:vimrc_local(expand('<afile>:p:h'))
+augroup END
+
+function! s:vimrc_local(loc)
+  let files = findfile('.vimrc.local', escape(a:loc, ' ') . ';', -1)
+  for i in reverse(filter(files, 'filereadable(v:val)'))
+    source `=i`
+  endfor
+endfunction
+
+set autoread
+au FocusGained,BufEnter * :checktime
