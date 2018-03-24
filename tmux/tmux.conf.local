@@ -268,3 +268,5 @@ tmux_conf_copy_to_os_clipboard=false
 set-option -g mouse on
 set-option -s set-clipboard off
 bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "xclip -se c -i"
+
+set -g focus-events on

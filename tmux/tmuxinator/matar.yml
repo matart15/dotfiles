@@ -44,9 +44,9 @@ root: ~/
 
 windows:
   - editor:
-      layout: a21a,272x59,0,0[272x13,0,0,4,272x14,0,14,29,272x14,0,29,6,272x15,0,44,7]
+      layout: main-horizontal
       panes:
         - cd ~/workplace/react_native
-        - cd ~/workplace/react_native/heroz
-        - cd ~/workplace
+        - cd ~/workplace/www
+        - cd ~/workplace/
         - cd ~/workplace/Unity/00_senken
