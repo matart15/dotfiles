@@ -76,7 +76,7 @@ let g:yadr_disable_solarized_enhancements = 1
 " colorscheme base16-onedark
 
 " colorscheme solarized
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 set t_Co=16
 nnoremap <silent> gd :TernDef<CR>
 
