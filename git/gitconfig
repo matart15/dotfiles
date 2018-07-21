@@ -111,7 +111,7 @@
 [core]
   autocrlf = false
   editor = vim
-  excludesfile = ~/.yadr/git/gitignore
+	excludesfile = /Users/matar/.yadr/git/gitignore
 [advice]
   statusHints = false
 [diff]
@@ -132,5 +132,7 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	name = matart15
+	name = matar
 	email = matart15@gmail.com
+[commit]
+	template = /Users/matar/.stCommitMsg

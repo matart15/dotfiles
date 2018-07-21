@@ -78,7 +78,7 @@ let g:yadr_disable_solarized_enhancements = 1
 
 " colorscheme solarized
 " let g:solarized_termcolors=256
-" set t_Co=16
+set t_Co=16
 nnoremap <silent> gd :TernDef<CR>
 
 " local vimrc
