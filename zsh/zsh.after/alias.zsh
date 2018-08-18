@@ -1,3 +1,3 @@
 alias d='docker'
-alias d-c='docker-compose'
-alias d-m='docker-machine'
+alias dc='docker-compose'
+alias dm='docker-machine'
