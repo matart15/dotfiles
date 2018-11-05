@@ -1,6 +1,7 @@
 " Open the Ack command and place the cursor into the quotes
-nmap ,ag :Ack ""<Left>
-nmap ,af :AckFile ""<Left>
+nmap <Leader>ag :Ack "<cword>"<cr>
+vnoremap <Leader>af y:AckFile <C-r>=fnameescape(@")<CR><CR>
+vnoremap <Leader>as y:Ack <C-r>=fnameescape(@")<CR><CR>
 
 if executable('ag')
   let g:ackprg = 'ag --nogroup --nocolor --column --ignore node_modules'
