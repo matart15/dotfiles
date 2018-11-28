@@ -1,7 +1,7 @@
 Bundle "https://github.com/wikitopian/hardmode"
 Bundle "https://github.com/w0rp/ale"
 Bundle "https://github.com/szw/vim-maximizer"
-Plugin 'othree/yajs.vim'
+" Plugin 'othree/yajs.vim'
 Plugin 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'], 'do': 'npm install' }
 Plugin 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plugin 'tmux-plugins/vim-tmux-focus-events'
