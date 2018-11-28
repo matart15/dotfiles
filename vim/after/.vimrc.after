@@ -82,9 +82,8 @@ augroup END
 " colorscheme solarized
 " let g:solarized_termcolors=256
 " Palenight
-let g:material_style='palenight'
 set background=dark
-colorscheme vim-material
+colorscheme vimterial
 
 set t_Co=16
 nnoremap <silent> gd :TernDef<CR>

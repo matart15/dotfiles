@@ -5,4 +5,6 @@ Bundle "https://github.com/szw/vim-maximizer"
 Plugin 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'], 'do': 'npm install' }
 Plugin 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plugin 'tmux-plugins/vim-tmux-focus-events'
-Plugin 'hzchirs/vim-material'
+" Plugin 'hzchirs/vim-material'
+Plugin 'larsbs/vimterial'
+Plugin 'MarSoft/nerdtree-grep-plugin'
