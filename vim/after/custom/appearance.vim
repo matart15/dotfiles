@@ -10,5 +10,6 @@
 " let g:material_style='palenight'
 set background=dark
 " colorscheme vim-material
+colorscheme vimterial
 
 set t_Co=16
