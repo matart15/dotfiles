@@ -46,7 +46,23 @@ windows:
   - editor:
       layout: main-horizontal
       panes:
-        - cd ~/workplace/react_native
-        - cd ~/workplace/www
-        - cd ~/workplace/
-        - cd ~/workplace/Unity/00_senken
+        - " cd ~/workplace/react/door/smart_door_front"
+        - " cd ~/workplace/react/door/smart_door_back 
+          ; sleep 2
+          ; tmux select-pane -t 2
+          ; tmux split-window -v
+          "
+        - " cd ~/workplace/react/pinto/pinto_back 
+          ; sleep 1
+          ; tmux select-pane -t 3
+          ; tmux split-window -v
+          "
+        - " cd ~/workplace/Unity/00_senken"
+        - " cd ~/workplace/dockers
+          ; tmux select-pane -t 5
+          ; tmux split-window -v
+          "
+        - " cd ~/workplace/react/goldware/goldware_modules_back/"
+        - " cd ~/workplace/react/pinto/ "
+
+
