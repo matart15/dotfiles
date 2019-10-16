@@ -136,3 +136,8 @@
 	email = matart15@gmail.com
 [commit]
 	template = /Users/matar/.stCommitMsg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

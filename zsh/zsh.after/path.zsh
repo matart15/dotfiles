@@ -13,7 +13,9 @@ elif [[ $unamestr == 'Darwin' ]]; then
   export PATH=~/.composer/vendor/bin:$PATH
   export ANDROID_HOME=~/Library/Android/sdk
   export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-  export PATH="/usr/local/opt/node@10/bin:$PATH"
+  # export PATH="/usr/local/opt/node@8/bin:$PATH"
+  export NVM_DIR=~/.nvm
+  source $(brew --prefix nvm)/nvm.sh
 
   # The next line updates PATH for the Google Cloud SDK.
   if [ -f '/Users/matar/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/matar/Downloads/google-cloud-sdk/path.zsh.inc'; fi
@@ -21,4 +23,5 @@ elif [[ $unamestr == 'Darwin' ]]; then
   # The next line enables shell command completion for gcloud.
   if [ -f '/Users/matar/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/matar/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
+  export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 fi
