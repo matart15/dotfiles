@@ -19,7 +19,7 @@ elif [[ $unamestr == 'Darwin' ]]; then
   source $(brew --prefix nvm)/nvm.sh
 
   # flutter
-  export PATH="$PATH:~/development/flutter/bin"
+  export PATH="$PATH:/Users/matar/development/flutter/bin"
 
   # docker completion
   autoload -Uz compinit && compinit -i
