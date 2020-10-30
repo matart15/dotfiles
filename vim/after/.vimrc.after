@@ -1,7 +1,5 @@
 let customsettings = '~/.yadr/vim/after/custom'
 let uname = system("uname -s")
-
-<<<<<<< HEAD
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
 " Put these lines at the very end of your vimrc file.
@@ -103,8 +101,6 @@ endfunction
 
 set autoread
 au FocusGained,BufEnter * :checktime
-=======
 for fpath in split(globpath(customsettings, '*.vim'), '\n')
   exe 'source' fpath
 endfor
->>>>>>> vim after fix
