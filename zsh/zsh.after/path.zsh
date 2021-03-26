@@ -16,14 +16,15 @@ if [[ $unamestr == 'Linux' ]]; then
   export PATH=$PATH:$ANDROID_HOME/emulator
 elif [[ $unamestr == 'Darwin' ]]; then
   # eval "$(rbenv init -)"
+  export PATH="$HOME/.rbenv/bin:$PATH" # ruby
   export PATH=/usr/local/opt/python/libexec/bin:$PATH # python
   export PATH=/Users/matar/Library/Python/3.6/bin:$PATH
   export PATH=~/.composer/vendor/bin:$PATH
   export ANDROID_HOME=~/Library/Android/sdk
   export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-  # export PATH="/usr/local/opt/node@8/bin:$PATH"
-  export NVM_DIR=~/.nvm
-  source $(brew --prefix nvm)/nvm.sh
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
   # flutter
   export PATH="$PATH:/Users/matar/development/flutter/bin"

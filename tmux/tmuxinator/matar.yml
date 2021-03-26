@@ -58,9 +58,9 @@ windows:
           ; tmux split-window -v
           "
         - " cd ~/workplace/Unity/00_senken"
-        - " cd ~/workplace/dockers
+        - " cd ~/workplace/react/salescircle/salescircle_front
           ; tmux select-pane -t 5
           ; tmux split-window -v
           "
-        - " cd ~/workplace/react/goldware/goldware_docs/"
-        - " cd ~/workplace/react/pinto/ "
+        - " cd ~/workplace/react/salescircle/salescircle_back"
+        - " cd ~/workplace/react/salescircle/salescircle_back"
