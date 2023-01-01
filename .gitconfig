@@ -18,17 +18,33 @@
 [push]
 	default = simple
 [alias]
+  a = add                           # add
+  b = branch -v                     # branch (verbose)
+  c = commit -m                     # commit with messages
+  amend = commit --amend            # ammend your last commit
+  ammend = commit --amend           # ammend your last commit
+  co = checkout                     # checkout
+  nb = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
+  d = diff                          # diff unstaged changes
+  dc = diff --cached                # diff staged changes
+  pl = pull                         # pull
+  ps = push                         # push
+  r = remote -v                     # show remotes (verbose)
+  st = status                       # status
 	s = status --short --branch
 	st = status
 	ci = commit
 	co = checkout
 	br = branch
-	di = diff
 	wd = diff --word-diff
-	pu = pull
-	pr = pull --rebase
+	  # log
 	tr = log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
 	tree = log --graph --pretty=oneline --abbrev-commit --decorate
+  l = log --graph --date=short
+  changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
+  short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
+  simple = log --pretty=format:\" * %s\"
+  shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
 [url "git@github.com:"]
 	pushInsteadOf = "git://github.com/"
 	pushInsteadOf = "https://github.com/"
