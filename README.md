@@ -16,7 +16,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # install iterm2
 brew doctor
 
-git clone https://github.com/kamipo/dotfiles.git
+# this code should be inside ~/dotfiles folder
+cd ~ && git clone https://github.com/kamipo/dotfiles.git
 cd dotfiles
 
 ./brewfile.sh
@@ -37,12 +38,4 @@ Update VSCode Terminal Font (Optional)
 
 ```sh
 curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors
-```
-
-### nvm
-
-```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-nvm install 18
-
 ```

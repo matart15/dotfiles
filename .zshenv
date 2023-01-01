@@ -14,7 +14,7 @@ function export_path_if_exists { [[ -d "$1" ]] && export PATH="$1:$PATH" }
 #   export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
 # fi
 
-export LANG='ja_JP.UTF-8'
+# export LANG='ja_JP.UTF-8'
 export EDITOR='vim'
 export PAGER='less'
 export LESS='-R -g -j10 --no-init --quit-if-one-screen'

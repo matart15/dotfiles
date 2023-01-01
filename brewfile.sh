@@ -86,4 +86,4 @@ brew install tmux
 # brew install ec2-api-tools
 
 # # Remove outdated versions
-# brew cleanup
+brew cleanup

@@ -51,7 +51,7 @@ windows:
       panes:
         - " cd ~/workplace/github/matart15/workflow"
         - " cd ~/workplace/github/matart15/fullstack-turborepo-starter"
-        - " cd ~/dotfiles"
+        - " cd $DOTFILES_DIR"
   - goldware:
       layout: main-horizontal
       panes:
