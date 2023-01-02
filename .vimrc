@@ -7,7 +7,7 @@ syntax on
 filetype plugin on
 filetype indent on
 
-colorscheme jellybeans
+" colorscheme jellybeans
 
 set encoding=utf-8
 set termencoding=utf-8
