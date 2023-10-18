@@ -1,0 +1,19 @@
+###-begin-nps-completions-###
+#
+# yargs command completion script
+#
+# Installation: ../.nvm/versions/node/v18.17.1/bin/nps completion >> ~/.zshrc
+#    or ../.nvm/versions/node/v18.17.1/bin/nps completion >> ~/.zsh_profile on OSX.
+#
+_nps_yargs_completions()
+{
+  local reply
+  local si=$IFS
+  IFS=$'
+' reply=($(COMP_CWORD="$((CURRENT-1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" ../.nvm/versions/node/v18.17.1/bin/nps --get-yargs-completions "${words[@]}"))
+  IFS=$si
+  _describe 'values' reply
+}
+compdef _nps_yargs_completions nps
+###-end-nps-completions-###
+

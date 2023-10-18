@@ -1,6 +1,7 @@
 [user]
 	name = matar
 	email = matart15@gmail.com
+	signingkey = F958DCE765E44880
 [color]
 	diff = auto
 	status = auto
@@ -54,3 +55,7 @@
 	root = ~/src
 [submodule]
 	recurse = true
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main

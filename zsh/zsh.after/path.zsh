@@ -9,3 +9,11 @@ unamestr=$(uname)
 if [[ $unamestr == 'Darwin' ]]; then
 
 fi
+
+export PATH=$PATH:/snap/bin # needed for code command
+
+# deno
+export DENO_INSTALL="/home/matar/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+export ANDROID_HOME="/home/matar/Android/Sdk"

@@ -17,7 +17,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew doctor
 
 # this code should be inside ~/dotfiles folder
-cd ~ && git clone https://github.com/kamipo/dotfiles.git
+cd ~ && git clone https://github.com/matart15/dotfiles.git
 cd dotfiles
 
 ./brewfile.sh

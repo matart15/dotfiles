@@ -35,10 +35,47 @@
 #   plenv rehash
 # fi
 
+OS="`uname`"
+case $OS in
+  'Linux')
+    alias ls='ls --color=auto'
+    if ! command -v zsh &> /dev/null
+    then
+      sudo apt install zsh -y
+      sudo apt install tmux -y
+      sudo apt install tmuxinator -y
+        # exit
+    fi
+    ;;
+  'FreeBSD')
+    alias ls='ls -G'
+    ;;
+  'WindowsNT')
+    ;;
+  'Darwin') 
+    OS='Mac'
+    ;;
+  *) ;;
+esac
+
+
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # sudo vi /etc/shells
-chpass -s /usr/local/bin/zsh
+
+case uname in
+  'Linux')
+    chsh -s $(which zsh)
+    ;;
+  'FreeBSD')
+    ;;
+  'WindowsNT')
+    ;;
+  'Darwin') 
+    chpass -s /usr/local/bin/zsh
+    ;;
+  *) ;;
+esac
 
 # Install PowerLevel10K Theme for Oh My Zsh
 git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -46,6 +83,10 @@ git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zs
 # Install ZSH Plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# tmux plugins
+# git clone https://github.com/tmux-plugins/tpm ~/dotfiles/.tmux/plugins/tpm
+git clone https://github.com/gpakosz/.tmux.git 
 
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash

@@ -38,7 +38,7 @@ alias lsg='ll | grep'
 
 # Alias Editing
 TRAPHUP() {
-  source $yadr/zsh/aliases.zsh
+  source $yadr/zsh/zsh.after/aliases.zsh
 }
 
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
