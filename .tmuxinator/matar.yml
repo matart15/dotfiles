@@ -43,25 +43,37 @@ root: ~/
 # post: tmux -CC attach -t matar
 
 windows:
-  - editor:
+  - specdest:
       layout: main-horizontal
       panes:
-        - " cd ~/workplace/github/specdest-company/"
-  - matart15:
+        - " cd ~/workplace/github/specdest-company/specdest-company.github.io"
+  - mycone:
       layout: main-horizontal
       panes:
-        - " cd ~/workplace/github/matart15/workflow"
-        - " cd ~/workplace/github/matart15/fullstack-turborepo-starter"
+        - " cd ~/workplace/github/specdest-company/mycone"
+  - kitamura-scraper:
+      layout: main-horizontal
+      panes:
+        - " cd ~/workplace/github/specdest-company/kitamura-scraper"
+  - meme-hitonari:
+      layout: main-horizontal
+      panes:
+        - " cd ~/workplace/github/specdest-company/meme/hitonari"
+  - meme-manual:
+      layout: main-horizontal
+      panes:
+        - " cd ~/workplace/github/specdest-company/meme/manual"
+  - guranora:
+      layout: main-horizontal
+      panes:
+        - " cd ~/workplace/github/specdest-company/guranora"
+  - dotfiles:
+      layout: main-horizontal
+      panes:
         - " cd $DOTFILES_DIR"
-  - goldware:
+  - old:
       layout: main-horizontal
       panes:
         - " cd ~/workplace/gitlab/goldware"
-  - senken:
-      layout: main-horizontal
-      panes:
         - " cd ~/workplace/Unity/00_senken"
-  - WJ:
-      layout: main-horizontal
-      panes:
         - " cd ~/workplace/github/WORKSJAPAN/e2RProCloud-b2b"
