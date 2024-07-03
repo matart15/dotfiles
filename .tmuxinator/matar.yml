@@ -71,6 +71,10 @@ windows:
       layout: main-horizontal
       panes:
         - " cd $DOTFILES_DIR"
+  - senken:
+      layout: main-horizontal
+      panes:
+        - " cd ~/workplace/Unity/code/puzzle"
   - old:
       layout: main-horizontal
       panes:

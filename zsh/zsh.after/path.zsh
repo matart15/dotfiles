@@ -27,3 +27,6 @@ esac
 # pnpm end
 
 export PATH="$PATH":"$HOME/.maestro/bin"
+
+# android
+export PATH=$PATH:~/Library/Android/sdk/platform-tools/
