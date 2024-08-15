@@ -43,41 +43,42 @@ root: ~/
 # post: tmux -CC attach -t matar
 
 windows:
+  - homelab:
+      layout: main-horizontal
+      panes:
+        - " cd ~/workplace/github/specdest-company/docker-services"
   - specdest:
       layout: main-horizontal
       panes:
-        - " cd ~/workplace/github/specdest-company/specdest-company.github.io"
+        - " cd ~/workplace/github/specdest-company/base"
+  - video_cv:
+      layout: main-horizontal
+      panes:
+        - " cd ~/workplace/github/specdest-company/video_cv"
   - mycone:
       layout: main-horizontal
       panes:
         - " cd ~/workplace/github/specdest-company/mycone"
-  - kitamura-scraper:
+  - bcg:
       layout: main-horizontal
       panes:
-        - " cd ~/workplace/github/specdest-company/kitamura-scraper"
-  - meme-hitonari:
+        - " cd ~/workplace/github/matart15/bcg"
+  - temp:
       layout: main-horizontal
       panes:
-        - " cd ~/workplace/github/specdest-company/meme/hitonari"
-  - meme-manual:
+        - " cd ~/workplace/github/temp"
+  - meme:
       layout: main-horizontal
       panes:
-        - " cd ~/workplace/github/specdest-company/meme/manual"
-  - guranora:
+        - " cd ~/workplace/github/specdest-company/meme"
+  - tomup:
       layout: main-horizontal
       panes:
-        - " cd ~/workplace/github/specdest-company/guranora"
-  - dotfiles:
-      layout: main-horizontal
-      panes:
-        - " cd $DOTFILES_DIR"
-  - senken:
-      layout: main-horizontal
-      panes:
-        - " cd ~/workplace/Unity/code/puzzle"
+        - " cd ~/workplace/github/specdest-company/"
   - old:
       layout: main-horizontal
       panes:
         - " cd ~/workplace/gitlab/goldware"
-        - " cd ~/workplace/Unity/00_senken"
+        - " cd ~/workplace/Unity/"
         - " cd ~/workplace/github/WORKSJAPAN/e2RProCloud-b2b"
+        - " cd ~/workplace/github/specdest-company/kitamura-scraper"

@@ -1,61 +1,61 @@
 [user]
-	name = matar
-	email = matart15@gmail.com
-	signingkey = 6ADA3C5FC2AE5C92
+name = matar
+email = matart15@gmail.com
+signingkey = 6ADA3C5FC2AE5C92
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = auto
+diff = auto
+status = auto
+branch = auto
+interactive = auto
 [pager]
-	log = diff-highlight | less
-	show = diff-highlight | less
-	diff = diff-highlight | less
+log = diff-highlight | less
+show = diff-highlight | less
+diff = diff-highlight | less
 [core]
-	quotepath = false
-	precomposeunicode = true
-	excludesfile = ~/.gitignore
-	commentchar = ";"
+quotepath = false
+precomposeunicode = true
+excludesfile = /Users/matar/.gitignore_global
+commentchar = ";"
 [push]
-	default = simple
+default = simple
 [alias]
-  a = add                           # add
-  b = branch -v                     # branch (verbose)
-  c = commit -m                     # commit with messages
-  amend = commit --amend            # ammend your last commit
-  ammend = commit --amend           # ammend your last commit
-  co = checkout                     # checkout
-  nb = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
-  d = diff                          # diff unstaged changes
-  dc = diff --cached                # diff staged changes
-  pl = pull                         # pull
-  ps = push                         # push
-  r = remote -v                     # show remotes (verbose)
-  st = status                       # status
-	s = status --short --branch
-	st = status
-	ci = commit
-	co = checkout
-	br = branch
-	wd = diff --word-diff
-	  # log
-	tr = log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
-	tree = log --graph --pretty=oneline --abbrev-commit --decorate
-  l = log --graph --date=short
-  changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
-  short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
-  simple = log --pretty=format:\" * %s\"
-  shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
+a = add                 # add
+b = branch -v           # branch (verbose)
+c = commit -m           # commit with messages
+amend = commit --amend  # ammend your last commit
+ammend = commit --amend # ammend your last commit
+co = checkout           # checkout
+nb = checkout -b        # create and switch to a new branch (mnemonic: "git new branch branchname...")
+d = diff                # diff unstaged changes
+dc = diff --cached      # diff staged changes
+pl = pull               # pull
+ps = push               # push
+r = remote -v           # show remotes (verbose)
+st = status             # status
+s = status --short --branch
+st = status
+ci = commit
+co = checkout
+br = branch
+wd = diff --word-diff
+# log
+tr = log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
+tree = log --graph --pretty=oneline --abbrev-commit --decorate
+l = log --graph --date=short
+changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
+short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
+simple = log --pretty=format:\" * %s\"
+shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
 [url "git@github.com:"]
-	pushInsteadOf = "git://github.com/"
-	pushInsteadOf = "https://github.com/"
+pushInsteadOf = "git://github.com/"
+pushInsteadOf = "https://github.com/"
 [credential]
-	helper = cache
+helper = cache
 [ghq]
-	root = ~/src
+root = ~/src
 [submodule]
-	recurse = true
+recurse = true
 [commit]
-	gpgsign = true
+gpgsign = true
 [init]
-	defaultBranch = main
+defaultBranch = main
