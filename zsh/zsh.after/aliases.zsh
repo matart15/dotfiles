@@ -41,10 +41,10 @@ TRAPHUP() {
   source $yadr/zsh/zsh.after/aliases.zsh
 }
 
-alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
+alias gar="killall -HUP -u \"$USER\" zsh" #global alias reload
 
 # vim using
-mvim --version > /dev/null 2>&1
+mvim --version >/dev/null 2>&1
 MACVIM_INSTALLED=$?
 if [ $MACVIM_INSTALLED -eq 0 ]; then
   alias vim="mvim -v"

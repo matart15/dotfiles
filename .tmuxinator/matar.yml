@@ -46,39 +46,30 @@ windows:
   - homelab:
       layout: main-horizontal
       panes:
-        - " cd ~/workplace/github/specdest-company/docker-services"
-  - specdest:
+        - " cd ~/workplace/github/specdest-company/homelab"
+  - tools:
       layout: main-horizontal
       panes:
-        - " cd ~/workplace/github/specdest-company/base"
-  - video_cv:
+        - " cd ~/workplace/github/specdest-company/tools"
+  - services:
       layout: main-horizontal
       panes:
-        - " cd ~/workplace/github/specdest-company/video_cv"
+        - " cd ~/workplace/github/specdest-company/services"
   - mycone:
       layout: main-horizontal
       panes:
         - " cd ~/workplace/github/specdest-company/mycone"
-  - bcg:
-      layout: main-horizontal
-      panes:
-        - " cd ~/workplace/github/matart15/bcg"
   - temp:
       layout: main-horizontal
       panes:
         - " cd ~/workplace/github/temp"
-  - meme:
-      layout: main-horizontal
-      panes:
-        - " cd ~/workplace/github/specdest-company/meme"
   - tomup:
       layout: main-horizontal
       panes:
-        - " cd ~/workplace/github/specdest-company/"
+        - " cd ~/workplace/github/specdest-company/tomup"
   - old:
       layout: main-horizontal
       panes:
-        - " cd ~/workplace/gitlab/goldware"
         - " cd ~/workplace/Unity/"
-        - " cd ~/workplace/github/WORKSJAPAN/e2RProCloud-b2b"
-        - " cd ~/workplace/github/specdest-company/kitamura-scraper"
+        - " cd ~/workplace/gitlab"
+        - " cd ~/workplace/github/old"
