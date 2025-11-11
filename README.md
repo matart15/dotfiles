@@ -10,8 +10,6 @@ sudo xcodebuild -license
 
 sudo mkdir /usr/local
 sudo chown -R `whoami` /usr/local
-# install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install iterm2
 brew doctor
