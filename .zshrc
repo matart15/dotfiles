@@ -60,3 +60,12 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# Added by Antigravity
+export PATH="/Users/matar/.antigravity/antigravity/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/matar/.antigravity/antigravity/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/matar/.antigravity/antigravity/bin:$PATH"

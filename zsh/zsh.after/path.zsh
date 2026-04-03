@@ -2,8 +2,9 @@
 # export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 # export PATH="/usr/local/opt/node@10/bin:$PATH"
 
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
-export PATH=$JAVA_HOME/bin:$PATH
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
+export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
+# export PATH=$JAVA_HOME/bin:$PATH
 
 unamestr=$(uname)
 if [[ $unamestr == 'Darwin' ]]; then
@@ -31,3 +32,6 @@ export PATH="$PATH":"$HOME/.maestro/bin"
 
 # android
 export PATH=$PATH:~/Library/Android/sdk/platform-tools/
+
+# cursor
+export PATH="$HOME/.local/bin:$PATH"
