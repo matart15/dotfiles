@@ -12,7 +12,7 @@
 #   git clone https://github.com/rkh/rbenv-update.git
 
 #   export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#   eval "$(rbenv init -)"
 
 #   # ruby required libssl-dev libreadline6-dev libncurses5-dev libsqlite3-dev
 #   rbenv install 2.5.3 --keep
@@ -43,6 +43,7 @@ case $OS in
     sudo apt install zsh -y
     sudo apt install tmux -y
     sudo apt install tmuxinator -y
+    sudo apt install gnupg -y
     # exit
   fi
   ;;
@@ -60,13 +61,13 @@ esac
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # sudo vi /etc/shells
 
-case uname in
+case $OS in
 'Linux')
   chsh -s $(which zsh)
   ;;
 'FreeBSD') ;;
 'WindowsNT') ;;
-'Darwin')
+'Mac')
   chpass -s /usr/local/bin/zsh
   ;;
 *) ;;
@@ -94,5 +95,7 @@ npm i -g nps yarn
 nps completion $HOME/dotfiles/zsh/zsh.after/nps.zsh >!
 
 # make OSX dock appear faster
-defaults write com.apple.dock autohide-delay -float 0; killall Dock;
-defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock
+if [ "$OS" == "Mac" ]; then
+  defaults write com.apple.dock autohide-delay -float 0; killall Dock;
+  defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock
+fi

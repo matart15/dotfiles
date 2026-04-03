@@ -8,9 +8,12 @@ status = auto
 branch = auto
 interactive = auto
 [pager]
-log = diff-highlight | less
-show = diff-highlight | less
-diff = diff-highlight | less
+	# log = diff-highlight | less
+	# show = diff-highlight | less
+	# diff = diff-highlight | less
+	log = less -FRX
+	show = less -FRX
+	diff = less -FRX
 [core]
 quotepath = false
 precomposeunicode = true
@@ -72,4 +75,4 @@ defaultBranch = main
 	process = git-lfs filter-process
 	required = true
 [gpg]
-	program = /opt/homebrew/bin/gpg
+# 	program = /opt/homebrew/bin/gpg
