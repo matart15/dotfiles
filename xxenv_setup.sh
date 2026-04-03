@@ -92,3 +92,7 @@ nvm install 18
 npm i -g nps yarn
 # install nps
 nps completion $HOME/dotfiles/zsh/zsh.after/nps.zsh >!
+
+# make OSX dock appear faster
+defaults write com.apple.dock autohide-delay -float 0; killall Dock;
+defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock

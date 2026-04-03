@@ -21,10 +21,12 @@ brew install --cask iterm2
 
 brew install git
 # brew install hub
+brew install rbenv
 brew install tig
 brew install vim
 brew install zsh
 brew install tmux
+brew install tmuxinator
 
 # brew install ag
 # brew install aspell
