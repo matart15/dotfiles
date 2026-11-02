@@ -60,7 +60,7 @@ root = ~/src
 [submodule]
 recurse = true
 [commit]
-gpgsign = true
+	gpgsign = false
 [init]
 defaultBranch = main
 [difftool "sourcetree"]

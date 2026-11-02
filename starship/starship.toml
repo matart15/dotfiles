@@ -1,0 +1,27 @@
+add_newline = false
+format = '$custom$git_branch$git_status$character'
+
+[custom.path]
+when = 'true'
+command = 'bash "$HOME/dotfiles/starship/starship-path.sh"'
+format = '$output'
+unsafe_no_escape = true
+
+[git_branch]
+style = 'bold 76'
+format = ' [$branch]($style)'
+
+[git_status]
+ahead = ' [⇡${count}](76)'
+behind = ' [⇣${count}](76)'
+diverged = ' [⇣${behind_count}⇡${ahead_count}](76)'
+format = '($ahead_behind$stashed$staged$modified$untracked$conflicted)'
+stashed = ' [*${count}](76)'
+staged = ' [+${count}](76)'
+modified = ' [!${count}](178)'
+untracked = ' [?${count}](76)'
+conflicted = ' [~${count}](196)'
+
+[character]
+success_symbol = ' [❯](bold green)'
+error_symbol = ' [❯](bold red)'

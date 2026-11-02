@@ -73,8 +73,25 @@ case $OS in
 *) ;;
 esac
 
-# Install PowerLevel10K Theme for Oh My Zsh
-git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+# Install Starship on supported operating systems (skip when already installed).
+if ! command -v starship >/dev/null 2>&1; then
+  case "$OS" in
+    Mac)
+      command -v brew >/dev/null 2>&1 || { echo "Homebrew required for Starship" >&2; exit 1; }
+      brew install starship
+      ;;
+    Linux)
+      # Install without root; ~/.local/bin is added to PATH by .zshenv.
+      mkdir -p "$HOME/.local/bin"
+      curl -fsSL https://starship.rs/install.sh | sh -s -- -y -b "$HOME/.local/bin"
+      export PATH="$HOME/.local/bin:$PATH"
+      ;;
+    FreeBSD)
+      sudo pkg install -y starship
+      ;;
+    *) echo "Unsupported OS for Starship installation: $OS" >&2; exit 1 ;;
+  esac
+fi
 
 # Install ZSH Plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -95,7 +112,7 @@ npm i -g nps yarn
 nps completion $HOME/dotfiles/zsh/zsh.after/nps.zsh >!
 
 # make OSX dock appear faster
-if [ "$OS" == "Mac" ]; then
+if [ "$OS" = "Mac" ]; then
   defaults write com.apple.dock autohide-delay -float 0; killall Dock;
   defaults write com.apple.dock autohide-time-modifier -int 0; killall Dock
 fi

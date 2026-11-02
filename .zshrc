@@ -1,13 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 autoload -U compinit
 compinit -u
 
@@ -27,12 +20,10 @@ if [ $TERM = "screen" ]; then
   }
 fi
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME=""
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 source $ZSH/oh-my-zsh.sh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export DOTFILES_DIR=$HOME/dotfiles
 for config_file ($DOTFILES_DIR/zsh/*.zsh) source $config_file
@@ -60,12 +51,13 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# pnpm
+export PNPM_HOME="/Users/matar/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
 
-# Added by Antigravity
-export PATH="/Users/matar/.antigravity/antigravity/bin:$PATH"
-
-# Added by Antigravity
-export PATH="/Users/matar/.antigravity/antigravity/bin:$PATH"
-
-# Added by Antigravity
-export PATH="/Users/matar/.antigravity/antigravity/bin:$PATH"
+# Unity CLI
+. "/Users/matar/.unity/env"

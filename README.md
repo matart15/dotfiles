@@ -37,3 +37,13 @@ Update VSCode Terminal Font (Optional)
 ```sh
 curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors
 ```
+
+
+### Starship prompt (macOS / Linux / FreeBSD)
+
+The tracked configuration is `starship/starship.toml`; the path formatter is
+`starship/starship-path.sh`. `dotsetup.sh` links the configuration to
+`~/.config/starship.toml`, and `xxenv_setup.sh` installs Starship if missing
+(Homebrew on macOS, the official user-local installer on Linux, `pkg` on FreeBSD).
+Run the existing setup in order: `./dotsetup.sh`, then `./xxenv_setup.sh`.
+Starship starts from `zsh/zsh.after/starship.zsh` when installed.

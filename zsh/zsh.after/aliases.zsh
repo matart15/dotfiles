@@ -156,3 +156,6 @@ alias rdmr='rake db:migrate:redo'
 
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
+
+# python
+alias python='/opt/homebrew/bin/python3'

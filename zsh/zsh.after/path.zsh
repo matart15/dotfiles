@@ -35,3 +35,6 @@ export PATH=$PATH:~/Library/Android/sdk/platform-tools/
 
 # cursor
 export PATH="$HOME/.local/bin:$PATH"
+
+# python
+export PATH="$HOME/Library/Python/3.11/bin:$PATH"

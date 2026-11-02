@@ -1,6 +1,7 @@
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 function export_path_if_exists { [[ -d "$1" ]] && export PATH="$1:$PATH" }
 
