@@ -14,3 +14,15 @@ bindkey -s "^[Op" "0"
 bindkey -s "^[Ol" "."
 bindkey -s "^[OM" "^M"
 
+
+set -o vi
+export EDITOR=vim
+export VISUAL=vim
+
+# Use Ctrl-x,Ctrl-l to get the output of the last command
+zmodload -i zsh/parameter
+insert-last-command-output() {
+LBUFFER+="$(eval $history[$((HISTCMD-1))])"
+}
+zle -N insert-last-command-output
+bindkey "^X^L" insert-last-command-output
